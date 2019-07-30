@@ -1,0 +1,9 @@
+add item to enum (either in room.h or unit.h)
+
+add texture to texturemanager
+
+add item to object menu
+
+add item to currently selected
+
+add item to ship texture list
