@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.10)
 
 #Set up project
-project(breakout-old VERSION 1.0)
+project(breakout VERSION 1.0)
 
 #Set executable
 set(SOURCES
