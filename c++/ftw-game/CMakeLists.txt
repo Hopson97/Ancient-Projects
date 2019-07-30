@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.10)
 
 #Set up project
-project(op-ftw-game VERSION 1.0)
+project(ftw-game VERSION 1.0)
 
 #Set executable
 set(SOURCES
