@@ -1,0 +1,2 @@
+SPEED 10
+REPAIR 5
