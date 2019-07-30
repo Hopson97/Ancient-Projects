@@ -14,7 +14,7 @@ I added CMakeLists and build scripts to all of these. See the project README fil
 |------------------------------------------------------------------------------------------|---------------|---------|-------|
 | [Breakout](https://github.com/Hopson97/Ancient-Projects/tree/master/c%2B%2B/breakout)    | November 2015 | SFML    | Game  |
 | [Dive](https://github.com/Hopson97/Ancient-Projects/tree/master/c%2B%2B/dive)            | October 2015  | SFML    | Game  |
-| [Flappy Bug](https://github.com/Hopson97/Ancient-Projects/tree/master/c%2B%2B/flappy-bug | October 2015  | SFML    | Game  |
+| [Flappy Bug](https://github.com/Hopson97/Ancient-Projects/tree/master/c%2B%2B/flappy-bug) | October 2015  | SFML    | Game  |
 |                                                                                          |               |         |       |
 |                                                                                          |               |         |       |
 |                                                                                          |               |         |       |
