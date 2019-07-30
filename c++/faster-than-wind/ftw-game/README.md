@@ -1,6 +1,6 @@
 # ftw-game
 
-description here
+Created Jan/Feb 2016
 
 ## Building and Running
 
