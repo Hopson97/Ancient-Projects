@@ -2,7 +2,7 @@
 
 if [ "$1" = "release" ]
 then
-    ./bin/release/breakout-old 
+    ./bin/release/breakout 
 else
-    ./bin/debug/breakout-old 
+    ./bin/debug/breakout 
 fi
