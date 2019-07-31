@@ -3,7 +3,6 @@ sh scripts/build.sh release
 rm -rf -d flappy-bug
 
 mkdir flappy-bug
-mkdir flappy-bug/res
 
 cp bin/release/flappy-bug flappy-bug
 cp -r res flappy-bug
