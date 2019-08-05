@@ -1,0 +1,39 @@
+Log created at 17:47:47 on 3/8/2019.
+
+  Time of log     | Time since last Log (s) | Message 
+  (s since start) |  (s)                    |         
+  0.160378	  |	0.160385	    |	Resource inserted of ID: 1 during state 0
+  0.160591	  |	0.000208	    |	Resource inserted of ID: 3 during state 0
+  0.177369	  |	0.016785	    |	Resource inserted of ID: 0 during state 1
+  0.184216	  |	0.006842	    |	Resource inserted of ID: 0 during state 1
+  0.192008	  |	0.007792	    |	Resource inserted of ID: 0 during state 1
+  0.193354	  |	0.001352	    |	Switched to Splash Screen state
+  0.193396	  |	0.000033	    |	Finished pushing game state.
+  3.196304	  |	3.002916	    |	Resource inserted of ID: 6 during state 2
+  3.196902	  |	0.000594	    |	Resource inserted of ID: 5 during state 2
+  3.197508	  |	0.000606	    |	Resource inserted of ID: 4 during state 2
+  3.198050	  |	0.000542	    |	Resource inserted of ID: 7 during state 2
+  3.198499	  |	0.000451	    |	Resource inserted of ID: 8 during state 2
+  3.198951	  |	0.000451	    |	Resource inserted of ID: 9 during state 2
+  3.199363	  |	0.000410	    |	Resource inserted of ID: 10 during state 2
+  3.199784	  |	0.000424	    |	Resource inserted of ID: 11 during state 2
+  3.200208	  |	0.000423	    |	Resource inserted of ID: 12 during state 2
+  3.200603	  |	0.000395	    |	Resource inserted of ID: 13 during state 2
+  3.200989	  |	0.000385	    |	Resource inserted of ID: 14 during state 2
+  3.201444	  |	0.000456	    |	Resource inserted of ID: 15 during state 2
+  3.201889	  |	0.000445	    |	Resource inserted of ID: 16 during state 2
+  3.202342	  |	0.000453	    |	Resource inserted of ID: 17 during state 2
+  3.202877	  |	0.000535	    |	Resource inserted of ID: 18 during state 2
+  3.203368	  |	0.000490	    |	Resource inserted of ID: 19 during state 2
+  3.203897	  |	0.000530	    |	Resource inserted of ID: 20 during state 2
+  3.204357	  |	0.000460	    |	Resource inserted of ID: 21 during state 2
+  3.204749	  |	0.000390	    |	Resource inserted of ID: 22 during state 2
+  3.205051	  |	0.000301	    |	Resource inserted of ID: 23 during state 2
+  3.246516	  |	0.041466	    |	Resource inserted of ID: 1 during state 2
+  3.263678	  |	0.017162	    |	Switched to Playing state
+  3.263717	  |	0.000036	    |	Resource removed.
+  3.263776	  |	0.000060	    |	Resource removed.
+  3.263794	  |	0.000017	    |	Resource removed.
+  3.263810	  |	0.000016	    |	Finished popping game state.
+  3.263818	  |	0.000007	    |	Finished pushing game state.
+  3.263822	  |	0.000005	    |	Finished changing game state.
