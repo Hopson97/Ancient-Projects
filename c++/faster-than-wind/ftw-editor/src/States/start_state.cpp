@@ -7,7 +7,7 @@
 StartState::StartState(Program* p):
     State(p)
 {
-    filePath = "../FasterThanWind/Resources/Textures/Ships/";
+    filePath = "../ftw-game/Resources/Textures/Ships/";
 }
 
 
@@ -144,7 +144,7 @@ void StartState::loadShip()
         shipName =  getShipName();
         layout  =   getShipLayout();
 
-        checker.open("../FasterThanWind/Resources/Ship Info/" + shipName + layout + ".ship");
+        checker.open("../ftw-game/Resources/Ship Info/" + shipName + layout + ".ship");
         if(!checker) {
             std::cout << "Ship name does not exist, try again." << std::endl;
             continue;
@@ -164,7 +164,7 @@ void StartState::loadShip()
     shipTexture.loadFromFile(filepath);
     printControls();
 
-    mProgram->changeState(std::make_shared<EditState>(mProgram, filepath, shipName, shipTexture, "../FasterThanWind/Resources/Ship Info/" + shipName + layout + ".ship"));
+    mProgram->changeState(std::make_shared<EditState>(mProgram, filepath, shipName, shipTexture, "../ftw-game/Resources/Ship Info/" + shipName + layout + ".ship"));
 }
 
 void StartState::printControls()

@@ -43,7 +43,7 @@ void EditState::save()
     conv << layout;
     std::string layoutString = conv.str();
 
-    std::ofstream file("../FasterThanWind/Resources/Ship Info/" + mShipName + layoutString + ".ship");
+    std::ofstream file("../ftw-game/Resources/Ship Info/" + mShipName + layoutString + ".ship");
 
     file << mShip.getTxrFilePath() << "\n";                             //File path for editor  (texture)
     file << "Resources/Textures/Ships/" + mShipName + ".png\n";     //File path for game    (texture), ignored by editor
@@ -226,7 +226,7 @@ void EditState::connectDoors(std::vector<Room>& rooms)
                             walls: X position, Y position, Rotation, The ID of this wall, The ID of the other wall, Type
                             units: X position, Y position, Type,
 
-        For example:   ../FasterThanWind/Resources/Textures/Ships/Ship.png
+        For example:   ../ftw-game/Resources/Textures/Ships/Ship.png
                         Resources/Textures/Ships/Ship.png
                         r 	 r	3	1	0	5
                         w	120	41	270	1	0	1
