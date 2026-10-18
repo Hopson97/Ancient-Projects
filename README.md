@@ -18,8 +18,8 @@ I added CMakeLists and build scripts to all of these. See the project README fil
 | [Faster than Wind](c++/faster-than-wind) | Jan/Feb 2016| SFML | 2 parts, editor and game itself|
 | [Stick RPG](c++/stick-rpg)| July 2017 | SFML | Game |
 | [City Game](c++/city-game)| September 2016 | SFML | Game |
-| [doodle jump](c++/doodle-jump)| 2016, Unknown | SFML | Game |
-| [doodle jump](c++/heli-attack)| April 2016, Unknown | SFML | Game, Also here https://github.com/Hopson97/Attack |
+| [Doodle Jump](c++/doodle-jump)| 2016, Unknown | SFML | Game |
+| [Heli Attack](c++/heli-attack)| April 2016, Unknown | SFML | Game, Also here https://github.com/Hopson97/Attack |
 
 ## Python
 
