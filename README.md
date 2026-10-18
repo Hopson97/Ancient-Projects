@@ -12,9 +12,19 @@ I added CMakeLists and build scripts to all of these. See the project README fil
 
 | Title                                                                                    | Date          | Library | Notes |
 |------------------------------------------------------------------------------------------|---------------|---------|-------|
-| [Breakout](https://github.com/Hopson97/Ancient-Projects/tree/master/c%2B%2B/breakout)    | November 2015 | SFML    | Game  |
-| [Dive](https://github.com/Hopson97/Ancient-Projects/tree/master/c%2B%2B/dive)            | October 2015  | SFML    | Game  |
-| [Flappy Bug](https://github.com/Hopson97/Ancient-Projects/tree/master/c%2B%2B/flappy-bug) | October 2015  | SFML    | Game  |
-| [Faster than Wind](https://github.com/Hopson97/Ancient-Projects/tree/master/c%2B%2B/faster-than-wind) | Jan/Feb 2016| SFML | 2 parts, editor and game itself|
-| [Stick RPG](https://github.com/Hopson97/Ancient-Projects/tree/master/c%2B%2B/stick-rpg)| July 2017 | SFML | Game |
-| [City Game](https://github.com/Hopson97/Ancient-Projects/tree/master/c%2B%2B/city-game)| September 2016 | SFML | Game |
+| [Breakout](c++/breakout/)    | November 2015 | SFML    | Game  |
+| [Dive](c++/dive)            | October 2015  | SFML    | Game  |
+| [Flappy Bug](c++/flappy-bug) | October 2015  | SFML    | Game  |
+| [Faster than Wind](c++/faster-than-wind) | Jan/Feb 2016| SFML | 2 parts, editor and game itself|
+| [Stick RPG](c++/stick-rpg)| July 2017 | SFML | Game |
+| [City Game](c++/city-game)| September 2016 | SFML | Game |
+| [doodle jump](c++/doodle-jump)| 2016, Unknown | SFML | Game |
+| [doodle jump](c++/heli-attack)| April 2016, Unknown | SFML | Game, Also here https://github.com/Hopson97/Attack |
+
+## Python
+
+Some projects have had UV added for easy dependency management. See the project README files for more information.
+
+| Title                       | Date          | Library | Notes                    |
+|-----------------------------|---------------|---------|--------------------------|
+| [Bug Game](c++/bug-game/)    | 02 Feb 2014   | SFML    | First graphics project?  |
