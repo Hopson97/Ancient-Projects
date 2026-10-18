@@ -1,0 +1,17 @@
+﻿TO DO
+
+
+1:	Fix bug that cause all attack styles to gain exp when you attack a monster DONE
+
+2:	Make it so the enemy loses health when hit. DONE
+
+3:	Add switch option to the encounter 
+
+4:	Add run option to the encounter. DONE
+
+5:	Fix bug where if you choose wrong colour when choosing a charater colour, it repeats GOOD CHOICE the number if times you failed for
+	some bazaaar reason.. DONE
+
+
+
+		FINISH OFF THE OPTION MENU IN THE ENCOUNTER THINGY

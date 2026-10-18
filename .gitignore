@@ -10,3 +10,7 @@ __pycache__
 bin/
 obj/
 *.suo
+
+*.exe
+
+.vs

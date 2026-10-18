@@ -41,5 +41,7 @@ Some projects have had UV added for easy dependency management. See the project 
 
 | Title                       | Date          | Library | Notes                    |
 |-----------------------------|---------------|---------|--------------------------|
-| [Hopson RPG](c#/hopson-rpg/)    | 29 April 2015   |     | Console Game  |
+| [Hopson RPG](c#/hopson-rpg/)      | 29 April 2015   |     | Console Game  |
+| [Hopson Realm](c#/hopson-realm/)  | 5 May 2015   |     | Console Game  |
+| [Hopsonia](c#/hopsonia/)          | 5 May 2015   |     | Console Game  |
 | [Flappy Bird](c#/flappy-bird/)    | 19 June 2015   |     | Console Game  |
