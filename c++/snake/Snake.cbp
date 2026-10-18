@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="Snake" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/Snake" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+					<Add option="-DGLEW_STATIC" />
+					<Add option="-DSFML_STATIC" />
+					<Add option="-DUNICODE" />
+					<Add directory="C:/Users/Matthew/Documents/Programming/C++/Libaries/SFML-2.3/include" />
+					<Add directory="Source" />
+					<Add directory="Source/States" />
+					<Add directory="Source/Util" />
+					<Add directory="Source/Entities" />
+					<Add directory="Source/Managers" />
+					<Add directory="Source/Game" />
+				</Compiler>
+				<Linker>
+					<Add library="sfml-graphics-s-d" />
+					<Add library="freetype" />
+					<Add library="jpeg" />
+					<Add library="sfml-window-s-d" />
+					<Add library="opengl32" />
+					<Add library="gdi32" />
+					<Add library="sfml-audio-s-d" />
+					<Add library="openal32" />
+					<Add library="flac" />
+					<Add library="vorbisenc" />
+					<Add library="vorbisfile" />
+					<Add library="vorbis" />
+					<Add library="ogg" />
+					<Add library="sfml-network-s-d" />
+					<Add library="ws2_32" />
+					<Add library="sfml-system-s-d" />
+					<Add library="winmm" />
+					<Add directory="C:/Users/Matthew/Documents/Programming/C++/Libaries/SFML-2.3/lib" />
+				</Linker>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/Snake" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add option="-DGLEW_STATIC" />
+					<Add option="-DSFML_STATIC" />
+					<Add option="-DUNICODE" />
+					<Add directory="C:/Users/Matthew/Documents/Programming/C++/Libaries/SFML-2.3/include" />
+					<Add directory="src" />
+					<Add directory="Source" />
+					<Add directory="Source/States" />
+					<Add directory="Source/Util" />
+					<Add directory="Source/Entities" />
+					<Add directory="Source/Managers" />
+					<Add directory="Source/Game" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+					<Add library="sfml-graphics-s" />
+					<Add library="freetype" />
+					<Add library="jpeg" />
+					<Add library="sfml-window-s" />
+					<Add library="opengl32" />
+					<Add library="gdi32" />
+					<Add library="sfml-audio-s" />
+					<Add library="openal32" />
+					<Add library="flac" />
+					<Add library="vorbisenc" />
+					<Add library="vorbisfile" />
+					<Add library="vorbis" />
+					<Add library="ogg" />
+					<Add library="sfml-network-s" />
+					<Add library="ws2_32" />
+					<Add library="sfml-system-s" />
+					<Add library="winmm" />
+					<Add directory="C:/Users/Matthew/Documents/Programming/C++/Libaries/SFML-2.3/lib" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-fexceptions" />
+		</Compiler>
+		<Unit filename="Res/Fonts/arial.ttf" />
+		<Unit filename="Source/Game/apple.cpp" />
+		<Unit filename="Source/Game/apple.h" />
+		<Unit filename="Source/Game/game_info.h" />
+		<Unit filename="Source/Game/snake.cpp" />
+		<Unit filename="Source/Game/snake.h" />
+		<Unit filename="Source/Managers/font_m.cpp" />
+		<Unit filename="Source/Managers/font_m.h" />
+		<Unit filename="Source/Managers/music_m.cpp" />
+		<Unit filename="Source/Managers/music_m.h" />
+		<Unit filename="Source/Managers/sound_m.cpp" />
+		<Unit filename="Source/Managers/sound_m.h" />
+		<Unit filename="Source/Managers/texture_m.cpp" />
+		<Unit filename="Source/Managers/texture_m.h" />
+		<Unit filename="Source/States/handler.cpp" />
+		<Unit filename="Source/States/handler.h" />
+		<Unit filename="Source/States/single_player.cpp" />
+		<Unit filename="Source/States/single_player.h" />
+		<Unit filename="Source/States/state_base.cpp" />
+		<Unit filename="Source/States/state_base.h" />
+		<Unit filename="Source/States/test.cpp" />
+		<Unit filename="Source/States/test.h" />
+		<Unit filename="Source/Util/rand.cpp" />
+		<Unit filename="Source/Util/rand.h" />
+		<Unit filename="Source/Util/window.cpp" />
+		<Unit filename="Source/Util/window.h" />
+		<Unit filename="Source/game.cpp" />
+		<Unit filename="Source/game.h" />
+		<Unit filename="Source/main.cpp" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
