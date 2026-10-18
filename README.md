@@ -25,9 +25,15 @@ I added CMakeLists and build scripts to all of these. See the project README fil
 
 Some projects have had UV added for easy dependency management. See the project README files for more information.
 
+The [python](python/) folder also has random scripts, t
+
 | Title                       | Date          | Library | Notes                    |
 |-----------------------------|---------------|---------|--------------------------|
-| [Bug Game](python/bug-game/)    | 02 Feb 2014   | SFML    | First graphics project?  |
+| [Bug Game](python/bug-game/)    | 02 Feb 2014   | SFML    | First graphics project maybe? |
+| [Circle Section Calculator](python/circle-section-calculator.py)    | 30 March 2014   |     | Misc learning python project  |
+| [Dog Years Calculator](python/dog-years-calculator.py)    | 07 September 2014   |     | Misc learning python project |
+| [Encounter](python/encounter.py)    | 16 September 2014   | 16 April 2014    | Year 11 Computing project |
+| [Attribute RPG Generator](python/attribute-rpg-generator.py)    | 13 April 2014   |     | Year 11 Computing project  |
 
 ## C#
 
