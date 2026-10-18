@@ -27,4 +27,12 @@ Some projects have had UV added for easy dependency management. See the project 
 
 | Title                       | Date          | Library | Notes                    |
 |-----------------------------|---------------|---------|--------------------------|
-| [Bug Game](c++/bug-game/)    | 02 Feb 2014   | SFML    | First graphics project?  |
+| [Bug Game](python/bug-game/)    | 02 Feb 2014   | SFML    | First graphics project?  |
+
+## C#
+
+Some projects have had UV added for easy dependency management. See the project README files for more information.
+
+| Title                       | Date          | Library | Notes                    |
+|-----------------------------|---------------|---------|--------------------------|
+| [Hopson RPG](c#/hopson-rpg/)    | 29 April 2015   | SFML    | First graphics project?  |

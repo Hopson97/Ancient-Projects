@@ -1,0 +1,8 @@
+.vs
+bin/
+Debug
+Release
+
+obj
+
+*.suo
