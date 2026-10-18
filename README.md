@@ -20,8 +20,9 @@ I added CMakeLists and build scripts to all of these. See the project README fil
 | [City Game](c++/city-game)| September 2016 | SFML | Game |
 | [Doodle Jump](c++/doodle-jump)| 2016, Unknown | SFML | Game |
 | [Heli Attack](c++/heli-attack)| April 2016, Unknown | SFML | Game, Also here https://github.com/Hopson97/Attack |
-| [Snake](c++/snake)| 14 June 2016  | SFML | Game |
-| [Pong](c++/pong)| 10 October 2015  | SFML | Game |
+| [Snake](c++/snake)| 14 June 2016  | SFML 2 | Game |
+| [Pong](c++/pong)| 10 October 2015  | SFML 2 | Game |
+| [Component Tests](c++/component-tests)| 18 October 2015  | SFML 2 | Playing around with components |
 
 ## Python
 

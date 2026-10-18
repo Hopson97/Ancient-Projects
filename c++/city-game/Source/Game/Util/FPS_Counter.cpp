@@ -8,8 +8,8 @@
 #include "Window.h"
 
 FPS_Counter :: FPS_Counter ()
+    : m_fpsText(Game::getFont(Font_Name::Rs))
 {
-    m_fpsText.setFont ( Game::getFont( Font_Name::Rs ) );
     m_fpsText.setCharacterSize ( 20 );
 }
 

@@ -1,3 +1,7 @@
 # Project binaries
 /bin
 city-game
+
+Logs/*.txt
+
+x64

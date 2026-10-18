@@ -8,7 +8,7 @@ GUI_Feature :: GUI_Feature (    const sf::Vector2f& size,
                                 const sf::Texture&  texture )
 {
     m_thing.setSize     ( size );
-    m_thing.setPosition ( position.x + guiPos.x, position.y + guiPos.y );
+    m_thing.setPosition({position.x + guiPos.x, position.y + guiPos.y});
     m_thing.setTexture  ( &texture );
 }
 

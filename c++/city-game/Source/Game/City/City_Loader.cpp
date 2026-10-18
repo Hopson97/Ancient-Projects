@@ -45,5 +45,5 @@ void City :: loadFloatRectToVector ( std::vector<sf::FloatRect>& vect, std::ifst
 {
     float left, top, width, height;
     inFile >> left >> top >> width >> height;
-    vect.emplace_back( left, top, width, height );
+    vect.emplace_back(sf::FloatRect{{left, top}, {width, height}});
 }

@@ -15,10 +15,10 @@ Builder :: Builder ( City& City, const City_Values& values )
 ,   m_cityValues    ( values )
 ,   m_buildMenu     ( {BUILD_MENU_WIDTH, BUILD_MENU_HEIGHT}, {0, BUILD_MENU_SEC_Y} )
 ,   m_buildPreview  ( m_currentData )
+    , m_cannotBuildText(Game::getFont(Font_Name::Rs))
 {
     using namespace std::placeholders;
 
-    m_cannotBuildText.setFont( Game::getFont( Font_Name::Rs ) );
     m_cannotBuildText.setCharacterSize( 15 );
 
     m_buildMenu.setBgColour    ( { 100, 100, 100 } );
@@ -103,8 +103,9 @@ void Builder :: update ()
     m_buildMenu.update();
     m_preview.setPosition( Mouse::getPosition() );
 
-    m_cannotBuildText.setPosition( Mouse::getPosition().x,
-                                   Mouse::getPosition().y - m_cannotBuildText.getGlobalBounds().height );
+    m_cannotBuildText.setPosition(
+        {Mouse::getPosition().x,
+         Mouse::getPosition().y - m_cannotBuildText.getGlobalBounds().size.y});
 
     if ( !m_canBuild ) {
         m_preview.setFillColor( { 200, 100, 100, 200 } );
@@ -173,19 +174,20 @@ void Builder :: checkIfCanBuild()
     static const std::string resourceError  = "Not enough resources to build.";
 
     sf::FloatRect bottom = m_preview.getGlobalBounds();
-    bottom.top += bottom.height - 7;
-    bottom.height = 7;
+    bottom.position.y += bottom.size.y - 7;
+    bottom.size.y = 7;
 
 
     for ( auto& rect : m_city.getGroundSections() ) {
-        if ( bottom.intersects( rect ) ) {
+        if (bottom.findIntersection(rect))
+        {
             m_canBuild = true;
             //m_cannotBuildText.setString( waterError );
         }
     }
 
     for ( auto& rect : m_city.getWaterSections() ) {
-        if ( bottom.intersects( rect ) ) {
+        if ( bottom.findIntersection( rect ) ) {
             m_canBuild = false;
             m_cannotBuildText.setString( waterError );
         }
@@ -194,7 +196,8 @@ void Builder :: checkIfCanBuild()
     //Check for intersection with the other buildings, seeing as we don't want
     //buildings ontop of buildings as that wouldn't make sense tbh
     for ( auto& building : m_city.getBuildings() ) {
-        if ( bottom.intersects( building->bounds ) ) {
+        if (bottom.findIntersection(building->bounds))
+        {
            m_canBuild = false;
            m_cannotBuildText.setString( collisionEorr );
         }

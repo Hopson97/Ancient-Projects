@@ -2,6 +2,7 @@
 #define BUILDING_DATA_H
 
 #include <fstream>
+#include <map>
 
 #include "E_Building_Use.h"
 #include "../City_Values.h"

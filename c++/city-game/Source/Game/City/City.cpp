@@ -59,7 +59,7 @@ void City::tryDestory(sf::FloatRect area)
     for ( size_t i = 0 ; i < m_buildings.size() ; i++ )
     {
         Building& b = *m_buildings.at( i );
-        if ( b.bounds.intersects ( area ) ) {
+        if ( b.bounds.findIntersection ( area ) ) {
             b.destroy();
             removeBuilding( b );
             m_buildings.erase( m_buildings.begin() + i );
@@ -101,7 +101,7 @@ void City :: draw()
 void City :: tryAddBuilding ( std::shared_ptr<Building> b )
 {
     //Make sure it is actually being added within the bounds of the map
-    if ( !b->bounds.intersects( m_background.getGlobalBounds() ) ) return;
+    if ( !b->bounds.findIntersection( m_background.getGlobalBounds() ) ) return;
 
     //If all the checks have passed, it will add the buildings
     addBuilding( b );

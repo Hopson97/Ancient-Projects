@@ -15,14 +15,14 @@ GUI :: GUI( const sf::Vector2f& size, const sf::Vector2f& position)
                           position,
                           Game::getTexture( Texture_Name::GUI_Resize_Button),
                           std::bind( &GUI::reSize, this ) )
+    , m_title(Game::getFont(Font_Name::Rs))
 {
     m_background.setPosition( position );
     m_background.setOutlineThickness( 3 );
     m_background.setOutlineColor( sf::Color::Black );
 
-    m_title.setPosition ( position.x + 25, position.y - 4 );
+    m_title.setPosition({position.x + 25, position.y - 4});
     m_title.setCharacterSize( 15 );
-    m_title.setFont( Game::getFont( Font_Name::Rs ) );
 }
 
 

@@ -25,9 +25,10 @@ class Splash_Screen : public State_Base
         class Splash
         {
             public:
-                Splash ( const sf::Texture& texture, const sf::SoundBuffer& sound, float seconds, bool stretch = false );
+            Splash(Game& game, const sf::Texture& texture, const sf::SoundBuffer& sound,
+                   float seconds, bool stretch = false);
 
-                Splash ( const sf::Texture& texture, float seconds, bool stretch = false );
+                Splash(Game& game, const sf::Texture& texture, float seconds, bool stretch = false);
 
                 void update();
                 bool hasFinished();

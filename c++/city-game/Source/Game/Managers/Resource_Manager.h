@@ -1,6 +1,8 @@
 #ifndef RESOURCE_MANAGER_H_INCLUDED
 #define RESOURCE_MANAGER_H_INCLUDED
 
+#include <map>
+
 #include "../Util/Debug_Log.h"
 
 template < typename Key, typename Resource >
@@ -20,9 +22,15 @@ class Resource_Manager
         void load( const std::string fileName, Key id  )
         {
             Resource_Type newResource ( m_gameState );
-
-            if ( !newResource.resource.loadFromFile( fileName ) ) {
-                throw std::runtime_error ( "Could not load resource from: " + fileName + "!" );
+            if constexpr (requires { newResource.resource.loadFromFile(fileName); })
+            {
+                if (!newResource.resource.loadFromFile(fileName))
+                    throw std::runtime_error("Could not load resource from: " + fileName + "!");
+            }
+            else
+            {
+                if (!newResource.resource.openFromFile(fileName))
+                    throw std::runtime_error("Could not open resource from: " + fileName + "!");
             }
 
             insert ( id, newResource );

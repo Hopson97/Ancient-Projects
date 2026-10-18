@@ -15,6 +15,8 @@ namespace Mouse
         const sf::Vector2f& getPosition ();
 
         void draw ();
+
+
 };
 
 #endif // MOUSE_H

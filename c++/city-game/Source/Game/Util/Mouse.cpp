@@ -6,8 +6,8 @@
 
 namespace
 {
-    sf::Sprite  m_sprite;
     sf::Texture m_icon;
+    sf::Sprite m_sprite{m_icon};
 
     bool m_isActive = false;
     sf::Clock m_activeTimer;
@@ -31,14 +31,14 @@ void init()
 {
     m_icon.loadFromFile( "Data/Textures/Cursor.png" );
     m_sprite.setTexture( m_icon );
-    m_sprite.setOrigin( 5,5 );
+    m_sprite.setOrigin({5, 5});
 }
 
 
 void update( )
 {
-    m_sprite.setPosition( sf::Mouse::getPosition( Window::get() ).x,
-                          sf::Mouse::getPosition( Window::get() ).y );
+    m_sprite.setPosition({(float)sf::Mouse::getPosition(Window::get()).x,
+                          (float)sf::Mouse::getPosition(Window::get()).y});
 
     if ( m_activeTimer.getElapsedTime().asSeconds() >= 0.2 ) {
         m_isActive = true;
@@ -51,13 +51,13 @@ void update( )
 
 bool isLeftDown()
 {
-    return isButtonDown( sf::Mouse::isButtonPressed ( sf::Mouse::Left ) );
+    return isButtonDown( sf::Mouse::isButtonPressed ( sf::Mouse::Button::Left ) );
 }
 
 
 bool isRightDown()
 {
-    return isButtonDown( sf::Mouse::isButtonPressed ( sf::Mouse::Right ) );
+    return isButtonDown( sf::Mouse::isButtonPressed ( sf::Mouse::Button::Right ) );
 }
 
 
