@@ -7,10 +7,10 @@ Entity::Entity()
 
 void Entity::logic(sf::RenderWindow &window)
 {
-    window.draw(this->sprite);
+    window.draw(*this->sprite);
 }
 
 void Entity::draw(sf::RenderWindow &window)
 {
-    window.draw(this->sprite);
+    window.draw(*this->sprite);
 }

@@ -10,7 +10,7 @@ class Entity
         virtual void logic(sf::RenderWindow &window);
         void draw(sf::RenderWindow &w);
     protected:
-        sf::Sprite sprite;
+        std::optional<sf::Sprite> sprite;
         sf::Texture texture;
     private:
 

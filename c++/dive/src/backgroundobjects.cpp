@@ -8,17 +8,17 @@ BackgroundObjects::BackgroundObjects()
 void BackgroundObjects::logic(sf::RenderWindow &window, bool flying, float speed)
 {
     if(flying)
-        this->sprite.move(this->xSpeed/10, (speed/2)*this->sprite.getScale().x);
+        this->sprite->move({this->xSpeed / 10, (speed / 2) * this->sprite->getScale().x});
     else
-        this->sprite.move(xSpeed/10, 0);
+        this->sprite->move({xSpeed / 10, 0});
 
     this->checkForReset(flying);
     if(!flying)
-        this->sprite.setScale((xSpeed)/8, (xSpeed)/8);
+        this->sprite->setScale({(xSpeed) / 8, (xSpeed) / 8});
     else if(flying)
-        this->sprite.setScale((xSpeed)/15, (xSpeed)/15);
+        this->sprite->setScale({(xSpeed)/15, (xSpeed)/15});
 
-    window.draw(this->sprite);
+    window.draw(*this->sprite);
 }
 
 void BackgroundObjects::reset(bool flying)
@@ -29,18 +29,20 @@ void BackgroundObjects::reset(bool flying)
      {
         if(direction == 0) //left
         {
-            this->sprite.setPosition(gbl::WIN_WIDTH, m.randRange(maxHeight, minHeight));
+            this->sprite->setPosition(
+                {(float)gbl::WIN_WIDTH, (float)m.randRange((float)maxHeight, (float)minHeight)});
             this->setSpeed(float(m.randRange(-10, -24)));
         }
         else if(direction == 1) //right
         {
-            this->sprite.setPosition(-200, m.randRange(maxHeight, minHeight));
+            this->sprite->setPosition(
+                {-200, (float)m.randRange((float)maxHeight, (float)minHeight)});
             this->setSpeed(float(m.randRange(5, 12)));
         }
      }
      else if(flying)
      {
-        this->sprite.setPosition(m.randRange(0, gbl::WIN_WIDTH - 100), -50);
+         this->sprite->setPosition({(float)m.randRange(0, (float)gbl::WIN_WIDTH - 100), -50});
         this->setSpeed(float(m.randRange(5, 12)));
      }
 }
@@ -56,14 +58,14 @@ void BackgroundObjects::setSpeed(float s)
     {
         if(direction == 1 )
         {
-            if(this->sprite.getPosition().x > gbl::WIN_WIDTH + 150)
+            if(this->sprite->getPosition().x > gbl::WIN_WIDTH + 150)
             {
                 this->reset(flying);
             }
         }
         else if(direction == 0)
         {
-            if(this->sprite.getPosition().x < -150)
+            if(this->sprite->getPosition().x < -150)
             {
                 this->reset(flying);
             }
@@ -71,7 +73,7 @@ void BackgroundObjects::setSpeed(float s)
     }
     else if(flying)
     {
-        if(this->sprite.getPosition().y > gbl::WIN_HEIGHT)
+        if(this->sprite->getPosition().y > gbl::WIN_HEIGHT)
         {
             this->reset(flying);
         }

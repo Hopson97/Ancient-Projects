@@ -31,7 +31,6 @@ class Game
 
     private:
         sf::RenderWindow window;
-        sf::Event event;
 
         sf::Sprite bg;
         sf::Texture bgT;

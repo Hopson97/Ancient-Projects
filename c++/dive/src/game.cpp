@@ -1,13 +1,15 @@
 #include "game.h"
 
 Game::Game()
+    : bg{bgT}
 {
-    this->window.create(sf::VideoMode(gbl::WIN_WIDTH, gbl::WIN_HEIGHT), "Name");
+    this->window.create(sf::VideoMode({(unsigned)gbl::WIN_WIDTH, (unsigned)gbl::WIN_HEIGHT}),
+                        "Dive");
     this->window.setFramerateLimit(60);
 
     std::string groundBG = "res/backgroundBegin.png";
     this->setBg(groundBG);
-    this->bg.setPosition(0, gbl::WIN_HEIGHT - 100);
+    this->bg.setPosition({0, (float)gbl::WIN_HEIGHT - 100});
     this->initLoop();
 }
 
@@ -23,7 +25,7 @@ void Game::initLoop()
     t.setSmooth(true);
     t.loadFromFile(path);
     sf::Sprite s(t);
-    s.setPosition(75, gbl::WIN_HEIGHT - 500);
+    s.setPosition({75, (float)gbl::WIN_HEIGHT - 500});
 
     this->addClouds(50);
 
@@ -55,14 +57,14 @@ void Game::startPlay(sf::Sprite &s)
 {
     Math m;
 
-    this->camera.setSize(gbl::WIN_WIDTH, gbl::WIN_HEIGHT);
+    this->camera.setSize({(float)gbl::WIN_WIDTH, (float)gbl::WIN_HEIGHT});
 
     bool phase = false;
 
     sf::RectangleShape r;
-    sf::Vector2f size(gbl::WIN_WIDTH + 50, gbl::WIN_HEIGHT + 50);
+    sf::Vector2f size((float)gbl::WIN_WIDTH + 50, (float)gbl::WIN_HEIGHT + 50);
     r.setSize(size);
-    r.move(-20, -20);
+    r.move({-20, -20});
     sf::Color c;
     int alpha = 0;
     c.a = alpha;
@@ -72,8 +74,8 @@ void Game::startPlay(sf::Sprite &s)
 
         this->handleEvents();
         this->window.setView(camera);
-        this->camera.setCenter(gbl::WIN_WIDTH / 2 + m.randRange(-10, 10),
-                                gbl::WIN_HEIGHT / 2 + m.randRange(-10, 10));
+        this->camera.setCenter({gbl::WIN_WIDTH / 2 + (float)m.randRange(-10, 10),
+                                gbl::WIN_HEIGHT / 2 + (float)m.randRange(-10, 10)});
 
         this->window.draw(bg);
         for(auto &bgOb: bgObjs) bgOb->logic(window, false, 0);
@@ -107,8 +109,8 @@ void Game::loop()
 {
     this->player.initPlay();
     this->setBg("res/bg2.png");
-    bg.setPosition(bg.getPosition().x, 100);
-    sf::IntRect bgi(0,0,800,500);
+    bg.setPosition({bg.getPosition().x, 100});
+    sf::IntRect bgi({{0, 0}, {800, 500}});
     bg.setTextureRect(bgi);
     while(window.isOpen())
     {
@@ -171,11 +173,11 @@ Game::handleEvents() handles any window events, such as closing the window
 void Game::handleEvents()
 {
     this->window.clear(bgColor);
-    while(window.pollEvent(event))
+    while (auto event = window.pollEvent())
     {
-        if(event.type == sf::Event::Closed)
+        if (event->is<sf::Event::Closed>())
         {
-            this->window.close();
+            window.close();
         }
     }
 }

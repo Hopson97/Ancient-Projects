@@ -1,19 +1,17 @@
 #include "button.h"
 
-Button::Button(int _xSize, int _ySize, int _xPos, int _yPos, std::string _text):
-    xSize(_xSize),
-    ySize(_ySize)
+Button::Button(int _xSize, int _ySize, int _xPos, int _yPos, std::string _text): xSize(_xSize)
+    , ySize(_ySize)
+    , font("res/arial.ttf")
+    , text(font)
 {
-    std::string path = "fonts/arial.ttf";
-    if(!font.loadFromFile(path));
 
     int textLength = _text.length();
 
-    text.setFont(font);
     text.setString(_text);
-    text.setPosition((_xPos + _xSize/2) - textLength*6,
-                      _yPos + _ySize/2 - 20);
-    text.setColor(sf::Color::Yellow);
+    text.setPosition({((float)_xPos + (float)_xSize / 2) - textLength * 6,
+                      (float)_yPos + (float)_ySize / 2 - 20});
+    text.setFillColor(sf::Color::Yellow);
 
     bCol.r = 5;
     bCol.g = 5;
@@ -26,7 +24,7 @@ Button::Button(int _xSize, int _ySize, int _xPos, int _yPos, std::string _text):
     theButton.setOutlineThickness(5);
 
 
-    theButton.setPosition(_xPos, _yPos);
+    theButton.setPosition({(float)_xPos, (float)_yPos});
 }
 
 bool Button::buttonClicked(sf::RenderWindow &w)
@@ -37,7 +35,7 @@ bool Button::buttonClicked(sf::RenderWindow &w)
 
     if(mouseOver(w))
     {
-        if(sf::Mouse::isButtonPressed(sf::Mouse::Left))
+        if(sf::Mouse::isButtonPressed(sf::Mouse::Button::Left))
         {
             return true;
         }
