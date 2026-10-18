@@ -5,3 +5,8 @@ f.py
 
 
 __pycache__
+
+
+bin/
+obj/
+*.suo
