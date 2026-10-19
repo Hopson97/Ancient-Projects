@@ -26,7 +26,7 @@ class Game
 
     private:
         sf::RenderWindow window;
-        sf::Event event;
+
 
         std::vector<std::unique_ptr<GameObject>> objs;
         Paddle paddle;

@@ -6,7 +6,7 @@ Brick::Brick(int x, int y)
 
 
     this->rect.setOutlineThickness(1);
-    this->rect.setPosition(x, y);
+    this->rect.setPosition({float(x), float(y)});
     this->rect.setSize(s);
 
     this->rect.setOutlineColor(this->randomColour());

@@ -2,7 +2,7 @@
 
 Game::Game()
 {
-    window.create(sf::VideoMode(730, 600), "Name");
+    window.create(sf::VideoMode({730, 600}), "Breakout");
     window.setFramerateLimit(60);
 
     addBricks();
@@ -49,9 +49,9 @@ void Game::handleEvents()
 {
     window.clear();
 
-    while(window.pollEvent(event))
+    while (auto event = window.pollEvent())
     {
-        if(event.type == sf::Event::Closed)
+        if (event->is<sf::Event::Closed>())
         {
             window.close();
         }

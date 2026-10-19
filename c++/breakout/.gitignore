@@ -1,4 +1,27 @@
-# Project binaries
-/bin
+# Linux
+build/
 
-breakout/
+# Windows
+*.dll
+*.exe
+*.filters
+*.user
+*.vs
+.vscode
+Debug/
+Release/
+
+# Misc
+*.zip
+*.temp
+*.srctrlprj
+*.srctrldb
+*.srctrlbm
+
+# Vcpkg
+vcpkg_installed/
+
+PROJECT_NAME_PLACEHOLDER/
+
+*.aseprite
+*.ase

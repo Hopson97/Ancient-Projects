@@ -1,2 +1,4 @@
-sh build
-gdb ./bin/debug/breakout 
+#!/bin/bash
+
+./scripts/build.sh
+gdb ./build/debug/breakout  

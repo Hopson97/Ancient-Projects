@@ -12,7 +12,7 @@ I added CMakeLists and build scripts to most of these. See the project README fi
 
 | Title                                    | Date                | Library | Notes                                              | Confirmed to Build (2026) |
 |------------------------------------------|---------------------|---------|----------------------------------------------------|---------------------------|
-| [Breakout](c++/breakout/)                | November 2015       | SFML    | Game                                               |                           |
+| [Breakout](c++/breakout/)                | November 2015       | SFML    | Game                                               | Yes, warning, flashing light                          |
 | [Dive](c++/dive)                         | October 2015        | SFML    | Game                                               | Yes                       |
 | [Flappy Bug](c++/flappy-bug)             | October 2015        | SFML    | Game                                               | Yes, does not work        |
 | [Faster than Wind](c++/faster-than-wind) | Jan/Feb 2016        | SFML    | 2 parts, editor and game itself                    |                           |

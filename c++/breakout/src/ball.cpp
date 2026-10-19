@@ -2,7 +2,7 @@
 
 Ball::Ball()
 {
-    this->rect.setPosition(325, 300);
+    this->rect.setPosition({325, 300});
 }
 
 void Ball::logic(sf::RenderWindow &window)
