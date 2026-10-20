@@ -12,7 +12,7 @@ I added CMakeLists and build scripts to most of these. See the project README fi
 
 | Title                                    | Date                | Library | Notes                                              | Confirmed to Build (2026) |
 |------------------------------------------|---------------------|---------|----------------------------------------------------|---------------------------|
-| [Breakout](c++/breakout/)                | November 2015       | SFML    | Game                                               | Yes, warning, flashing light                          |
+| [Breakout](c++/breakout/)                | November 2015       | SFML    | Game                                               | Yes, warning, flashing lights |
 | [Dive](c++/dive)                         | October 2015        | SFML    | Game                                               | Yes                       |
 | [Flappy Bug](c++/flappy-bug)             | October 2015        | SFML    | Game                                               | Yes, does not work        |
 | [Faster than Wind](c++/faster-than-wind) | Jan/Feb 2016        | SFML    | 2 parts, editor and game itself                    |                           |
@@ -24,6 +24,8 @@ I added CMakeLists and build scripts to most of these. See the project README fi
 | [Pong](c++/pong)                         | 10 October 2015     | SFML 2  | Game                                               |                           |
 | [Component Tests](c++/component-tests)   | 18 October 2015     | SFML 2  | Playing around with components                     |                           |
 | [Powder Test](c++/powder-test)           | 9 August 2015       | SFML 2  | Playing around with powder physics                 | Yes                       |
+| [Wall Test](c++/wall-test)               | 18 October 2015     | SFML 2  | Walls dragging around                              |                           |
+| [OpenGL OOP Test](c++/opengl-oop-test)   | 16 January 2016     | OpenGL  | Playing around with OpenGL OOP                     |                           | 
 
 ## Python
 
