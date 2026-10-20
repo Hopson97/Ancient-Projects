@@ -12,7 +12,7 @@ HealthBar::HealthBar(const Health& health)
 
     for (int i = 10 ; i >= 0 ; i--)
     {
-        m_stages.addFrame({0, i * 22, 220, 22}, sf::seconds(0.5));
+        m_stages.addFrame({{0, i * 22}, {220, 22}}, sf::seconds(0.5));
     }
     m_sprite.setTextureRect(m_stages.getFrame());
 }
@@ -32,7 +32,7 @@ void HealthBar::update()
         m_popTimer.getElapsedTime().asSeconds() > 0.3)
     {
         m_isPopped = false;
-        m_sprite.setScale(1, 1);
+        m_sprite.setScale({1, 1});
         m_sprite.setFillColor(sf::Color::White);
     }
 }
@@ -49,7 +49,7 @@ void HealthBar::pop()
         m_popTimer.restart();
         m_isPopped = true;
 
-        m_sprite.setScale(2, 2);
+        m_sprite.setScale({2, 2});
         m_sprite.setFillColor(sf::Color::Yellow);
     }
 }

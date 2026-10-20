@@ -11,7 +11,7 @@ std::vector<sf::RectangleShape> LevelLoader::loadLevel()
     auto getRoad = [&](float tx, float ty)
     {
         sf::RectangleShape road(size);
-        road.setPosition(tx * size.x, ty * size.y);
+        road.setPosition({tx * size.x, ty * size.y});
         return road;
     };
 

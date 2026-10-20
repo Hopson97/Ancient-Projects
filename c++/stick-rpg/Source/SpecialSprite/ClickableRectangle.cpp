@@ -34,9 +34,10 @@ void ClickableRectangle::testForInteration(const sf::RenderWindow& window, sf::E
 
 bool ClickableRectangle::isClick(sf::Event e)
 {
-    if (e.type == sf::Event::MouseButtonPressed)
+    if (auto mouse = e.getIf < sf::Event::MouseButtonPressed>())
     {
-        return (e.mouseButton.button == sf::Mouse::Left);
+        return (mouse->button == sf::Mouse::Button::Left);
+
     }
     else
     {

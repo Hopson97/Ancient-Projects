@@ -13,12 +13,12 @@ Animation animation;
 
 namespace State
 {
-    StatePlaying::StatePlaying(Application& application, Levels& stats)
+    StatePlaying::StatePlaying(Application& application, const Levels& stats)
     :   StateBase   (application)
     ,   m_player    (stats)
     {
-        m_viewingArea.setCenter(BASE_LEVEL_OB_SIZE.x * 4.5, 0);
-        m_viewingArea.setViewport({0, 0, 1, 1});
+        m_viewingArea.setCenter({(float)BASE_LEVEL_OB_SIZE.x * 4.5f, 0});
+        m_viewingArea.setViewport({{0, 0}, {1, 1}});
 
         loadLevel();
     }
@@ -32,19 +32,19 @@ namespace State
 
         float speed = 3;
 
-        if (pressed(sf::Keyboard::W))
+        if (pressed(sf::Keyboard::Key::W))
         {
             m_player.addForce({0, -speed});
         }
-        if (pressed(sf::Keyboard::S))
+        if (pressed(sf::Keyboard::Key::S))
         {
             m_player.addForce({0, speed});
         }
-        if (pressed(sf::Keyboard::A))
+        if (pressed(sf::Keyboard::Key::A))
         {
             m_player.addForce({-speed, 0});
         }
-        if (pressed(sf::Keyboard::D))
+        if (pressed(sf::Keyboard::Key::D))
         {
             m_player.addForce({speed, 0});
         }

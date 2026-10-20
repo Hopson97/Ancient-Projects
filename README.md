@@ -16,7 +16,7 @@ I added CMakeLists and build scripts to most of these. See the project README fi
 | [Dive](c++/dive)                         | October 2015        | SFML    | Game                                                                 | Yes                           |
 | [Flappy Bug](c++/flappy-bug)             | October 2015        | SFML    | Game                                                                 | Yes, does not work            |
 | [Faster than Wind](c++/faster-than-wind) | Jan/Feb 2016        | SFML    | 2 parts, editor and game itself                                      |                               |
-| [Stick RPG](c++/stick-rpg)               | July 2017           | SFML    | Game                                                                 |                               |
+| [Stick RPG](c++/stick-rpg)               | July 2017           | SFML    | Game                                                                 | Yes, does not work            |
 | [City Game](c++/city-game)               | September 2016      | SFML    | Game                                                                 |                               |
 | [Doodle Jump](c++/doodle-jump)           | 2016, Unknown       | SFML    | Game                                                                 |                               |
 | [Heli Attack](c++/heli-attack)           | April 2016, Unknown | SFML    | Game, Also here https://github.com/Hopson97/Attack                   |                               |

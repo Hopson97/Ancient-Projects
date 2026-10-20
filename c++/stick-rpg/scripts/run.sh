@@ -2,7 +2,7 @@
 
 if [ "$1" = "release" ]
 then
-    ./bin/release/stick-rpg 
+    ./build/release/stick-rpg
 else
-    ./bin/debug/stick-rpg 
+    ./build/debug/stick-rpg
 fi

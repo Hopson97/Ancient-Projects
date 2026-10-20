@@ -20,15 +20,15 @@ namespace State
     :   StateBase   (app)
     ,   m_frontMenu         (0.0f)
     ,   m_statSelectionMenu (0.0f)
+        , m_skillPointsDisplay(ResourceHolder::getFont("arial"))
     {
         m_menuMusic.openFromFile("res/music/menu.ogg");
         m_menuMusic.play();
-        m_menuMusic.setLoop(true);
+        m_menuMusic.setLooping(true);
 
         initMenu();
 
-        m_skillPointsDisplay.move(0, 220);
-        m_skillPointsDisplay.setFont(ResourceHolder::getFont("arial"));
+        m_skillPointsDisplay.move({0, 220});
         m_skillPointsDisplay.setCharacterSize(20);
     }
 

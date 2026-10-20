@@ -32,7 +32,14 @@ class ResourceManager
         {
             auto str = buildString(name);
             Resource r;
-            r.loadFromFile(str);
+            if constexpr (std::is_same_v<Resource, sf::Font>)
+            {
+                r.openFromFile(str);
+            }
+            else
+            {
+                r.loadFromFile(str);
+            }
             m_resourceMap.emplace(name, r);
         }
 

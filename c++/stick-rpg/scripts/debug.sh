@@ -1,2 +1,4 @@
-sh build
-gdb ./bin/debug/stick-rpg 
+#!/bin/bash
+
+./scripts/build.sh
+gdb ./build/debug/stick-rpg  

@@ -1,5 +1,5 @@
 #include "Health.h"
-
+#include <SFML/System/Time.hpp>
 #include <algorithm>
 
 Health::Health(int max)

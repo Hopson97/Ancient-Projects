@@ -6,7 +6,7 @@
 #include <iostream>
 
 Application::Application(std::string&& appName)
-:   m_window    ({WINDOW_WIDTH, WINDOW_HEIGHT}, std::move(appName))
+    : m_window(sf::VideoMode{{WINDOW_WIDTH, WINDOW_HEIGHT}}, std::move(appName))
 {
     m_window.setFramerateLimit(60);
     m_window.setPosition({0, 0});
@@ -71,18 +71,11 @@ void Application::popState()
 
 void Application::handleEvents()
 {
-    sf::Event e;
-    while (m_window.pollEvent(e))
+    while (auto event = m_window.pollEvent())
     {
-        currentState().handleEvent(e);
-        switch (e.type)
+        if (event->is<sf::Event::Closed>())
         {
-            case sf::Event::Closed:
-                m_window.close();
-                break;
-
-            default:
-                break;
+            m_window.close();
         }
     }
 

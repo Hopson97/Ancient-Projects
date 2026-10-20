@@ -10,6 +10,7 @@ namespace GUI
     :   m_button    (onClick,
                      std::bind(&BasicButton::onTouch,   this),
                      std::bind(&BasicButton::onNoTouch, this))
+        , m_label(ResourceHolder::get().getFont("arial"))
     {
         m_button.setSize({BASE_WIDTH,
                           BASE_HEIGHT});
@@ -18,7 +19,6 @@ namespace GUI
         m_button.setOutlineThickness(5);
         m_button.setOutlineColor(sf::Color::Black);
 
-        m_label.setFont(ResourceHolder::get().getFont("arial"));
         m_label.setString(std::move(label));
     }
 
@@ -27,8 +27,8 @@ namespace GUI
         m_button.setPosition(position);
         m_label.setPosition(position);
 
-        m_label.move(m_button.getGlobalBounds().width / 2 - m_label.getGlobalBounds().width / 2,
-                     m_label.getGlobalBounds().height / 2);
+        m_label.move({m_button.getGlobalBounds().size.x / 2 - m_label.getGlobalBounds().size.x / 2,
+                      m_label.getGlobalBounds().size.y / 2});
     }
 
     void BasicButton::onUpdate(const sf::RenderWindow& window, sf::Event e)

@@ -14,7 +14,7 @@ namespace State
     class StatePlaying : public StateBase
     {
         public:
-            StatePlaying(Application& application, Levels& stats);
+            StatePlaying(Application& application, const Levels& stats);
 
             void handleInput    ();
             void handleEvent    (sf::Event e);

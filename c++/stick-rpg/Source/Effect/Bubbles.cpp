@@ -13,8 +13,8 @@ constexpr static int    SIZE            = 25,
 
 Bubble::Bubble()
 {
-    auto red    = (sf::Uint8)Random::get().intInRange(175, 230);
-    auto green  = (sf::Uint8)Random::get().intInRange(175, 230);
+    auto red    = (uint8_t)Random::get().intInRange(175, 230);
+    auto green  = (uint8_t)Random::get().intInRange(175, 230);
 
     m_sprite.setFillColor({red, green, 200});
     reset();
@@ -25,7 +25,7 @@ void Bubble::update(float dt)
     auto xMove = std::sin(m_lifeTime.getElapsedTime().asSeconds()) * m_speed * dt;
     auto yMove = -m_speed * dt;
 
-    m_sprite.move(xMove, yMove);
+    m_sprite.move({xMove, yMove});
     m_sprite.setTexture(&ResourceHolder::getTexure("bubble"));
 
     if (m_lifeTime.getElapsedTime() > m_deathTime)

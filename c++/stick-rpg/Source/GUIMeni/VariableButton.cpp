@@ -14,6 +14,7 @@ namespace GUI
     ,   m_decrease  (   decrease,
                         std::bind(&VariableButton::onTouch,   this),
                         std::bind(&VariableButton::onNoTouch, this))
+        , m_label(ResourceHolder::get().getFont("arial"))
     {
         m_increase.setTexture(&ResourceHolder::get().getTexure("rarrow"));
         m_decrease.setTexture(&ResourceHolder::get().getTexure("larrow"));
@@ -30,7 +31,6 @@ namespace GUI
         m_labelRect.setOutlineThickness(5);
         m_labelRect.setOutlineColor(sf::Color::Black);
 
-        m_label.setFont(ResourceHolder::get().getFont("arial"));
         m_label.setString(std::move(label));
     }
 
@@ -39,13 +39,14 @@ namespace GUI
         m_labelRect.setPosition(position);
         m_label.setPosition(position);
 
-        m_label.move(m_labelRect.getGlobalBounds().width / 2 - m_label.getGlobalBounds().width / 2,
-                     m_label.getGlobalBounds().height / 2);
+        m_label.move(
+            {m_labelRect.getGlobalBounds().size.x / 2 - m_label.getGlobalBounds().size.x / 2,
+             m_label.getGlobalBounds().size.y / 2});
 
-        m_increase.setPosition({position.x + m_labelRect.getGlobalBounds().width + 10,
+        m_increase.setPosition({position.x + m_labelRect.getGlobalBounds().size.x + 10,
                                 position.y});
 
-        m_decrease.setPosition({position.x - m_decrease.getGlobalBounds().width - 10,
+        m_decrease.setPosition({position.x - m_decrease.getGlobalBounds().size.x - 10,
                                 position.y});
     }
 
