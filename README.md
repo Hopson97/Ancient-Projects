@@ -4,7 +4,7 @@ This is a bunch of veryyy old projects from 2015/2016/2017 that I created when l
 
 Just thought it would be interesting to share what I have found on old hardrives etc
 
-Source code is mostly untouched. The only modifications is that I fixed any errors that would not allow them to work.
+Source code is mostly untouched, the only modifications is that I fixed any errors that would not allow them to work. The dates are mostly estimates based on the file creation or updated dates of the project files.
 
 ## C++
 
@@ -20,14 +20,15 @@ I added CMakeLists and build scripts to most of these. See the project README fi
 | [City Game](c++/city-game)               | September 2016      | SFML    | Game                                                                 |                               |
 | [Doodle Jump](c++/doodle-jump)           | 2016, Unknown       | SFML    | Game                                                                 |                               |
 | [Heli Attack](c++/heli-attack)           | April 2016, Unknown | SFML    | Game, Also here https://github.com/Hopson97/Attack                   |                               |
-| [Snake](c++/snake)                       | 14 June 2016        | SFML 2  | Game                                                                 |                               |
-| [Pong](c++/pong)                         | 10 October 2015     | SFML 2  | Game                                                                 |                               |
-| [Component Tests](c++/component-tests)   | 18 October 2015     | SFML 2  | Playing around with components                                       |                               |
-| [Powder Test](c++/powder-test)           | 9 August 2015       | SFML 2  | Playing around with powder physics                                   | Yes                           |
-| [Wall Test](c++/wall-test)               | 18 October 2015     | SFML 2  | Walls dragging around                                                |                               |
+| [Snake](c++/snake)                       | 14 June 2016        | SFML    | Game                                                                 |                               |
+| [Pong](c++/pong)                         | 10 October 2015     | SFML    | Game                                                                 |                               |
+| [Component Tests](c++/component-tests)   | 18 October 2015     | SFML    | Playing around with components                                       |                               |
+| [Powder Test](c++/powder-test)           | 9 August 2015       | SFML    | Playing around with powder physics                                   | Yes                           |
+| [Wall Test](c++/wall-test)               | 18 October 2015     | SFML    | Walls dragging around                                                |                               |
 | [OpenGL OOP Test](c++/opengl-oop-test)   | 16 January 2016     | OpenGL  | Playing around with OpenGL OOP                                       |                               | 
 | [OpenGL Waves](c++/opengl-waves)         | 14 January 2016     | OpenGL  | One of my first OpenGL projects, cubes moving in a whirlpool pattern | Yes                           | 
-| [Sprite Test](c++/sprite-test)           | 07 August 2015      | SFML 2  | First time trying out SFML sprites.                                  |                               | 
+| [Sprite Test](c++/sprite-test)           | 07 August 2015      | SFML    | First time trying out SFML sprites                                   |                               | 
+| [Rotation Test](c++/rotation-test)       | 04 October 2015     | SFML    | Testing rotating a sprite to point towards the mouse                 | Yes                           | 
 
 ## Python
 
